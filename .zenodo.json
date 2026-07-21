@@ -1,21 +1,48 @@
 {
   "title": "Machine Learning Reveals a Mammary Tumor-Associated Multi-Ion Signature and Its Detectability Across Biological Samples — analysis code",
-  "description": "Animal-level (leave-one-animal-out), leakage-free analysis code, result tables and figures for the ToF-SIMS breast-cancer classification study in the MMTV-PyMT mouse model. Accompanies the article by Manaprasertsak et al.",
+  "description": "Analysis code, result tables, and figures for a time-of-flight secondary ion mass spectrometry (ToF-SIMS) machine-learning study of a mammary tumor-associated multi-ion signature and its detectability across biological samples in the MMTV-PyMT mouse model of breast cancer. Accompanies the article by Manaprasertsak et al.",
   "upload_type": "software",
   "license": "MIT",
   "access_right": "open",
   "creators": [
-    {"name": "Manaprasertsak, Auraya"},
-    {"name": "Tang, Wei"},
-    {"name": "Lööf, Caroline"},
-    {"name": "Azemovic, Laila"},
-    {"name": "Hagerling, Catharina"},
-    {"name": "Mohlin, Sofie"},
-    {"name": "Pienta, Kenneth J."},
-    {"name": "Kazi, Julhash U."},
-    {"name": "Malmberg, Per"},
-    {"name": "Hammarlund, Emma U."}
+    {
+      "name": "Manaprasertsak, Auraya"
+    },
+    {
+      "name": "Tang, Wei"
+    },
+    {
+      "name": "Lööf, Caroline"
+    },
+    {
+      "name": "Azemovic, Laila"
+    },
+    {
+      "name": "Hagerling, Catharina"
+    },
+    {
+      "name": "Mohlin, Sofie"
+    },
+    {
+      "name": "Pienta, Kenneth J."
+    },
+    {
+      "name": "Kazi, Julhash U."
+    },
+    {
+      "name": "Malmberg, Per"
+    },
+    {
+      "name": "Hammarlund, Emma U."
+    }
   ],
-  "keywords": ["ToF-SIMS", "mass spectrometry", "breast cancer", "MMTV-PyMT",
-               "machine learning", "multi-ion signature", "leave-one-animal-out"]
+  "keywords": [
+    "ToF-SIMS",
+    "mass spectrometry",
+    "breast cancer",
+    "MMTV-PyMT",
+    "machine learning",
+    "multi-ion signature",
+    "leave-one-animal-out"
+  ]
 }

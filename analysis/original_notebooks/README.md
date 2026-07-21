@@ -14,5 +14,5 @@ aligned peak tables and the original exploratory figures.
 | `06_analysis_fur.ipynb` | fur analysis |
 | `07_analysis_liver.ipynb` | liver analysis |
 
-These are provided for provenance. The animal-level, leakage-free pipeline in
+These are provided for provenance. The pipeline in
 the parent `analysis/` directory is the analysis reported in the paper.

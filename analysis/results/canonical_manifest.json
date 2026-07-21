@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generated_on": "2026-07-17",
-  "purpose": "Publication asset manifest for the post-audit animal-level analysis.",
+  "purpose": "Publication asset manifest for the analysis.",
   "primary_classification": {
     "file": "permutation_exact8.csv",
     "description": "Animal-level LOAO AUCs and primary tissue-by-model permutation results; exact enumeration for liver and serum."

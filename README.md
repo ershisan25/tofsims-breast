@@ -12,18 +12,12 @@ signatures (< 250 *m/z*) in the MMTV-PyMT mouse model of breast cancer and test
 whether a mammary tumor multi-ion signature can be detected in peripheral
 samples — mammary gland, fur, liver, and serum from the same animals.
 
-Classification uses the **animal** as the unit of analysis under
-**leave-one-animal-out (LOAO)** cross-validation:
-
-- **Unit = the animal.** Held-out spectrum-level scores are averaged to a single
-  animal-level score before any AUC or inference is computed.
-- **No information leakage.** All preprocessing (within-fold detection filter,
-  log2 transform, Pareto scaling) is fit on the training animals inside each
-  LOAO fold.
-
-Significance is assessed by animal-label permutation tests with
-Benjamini–Hochberg (BH) correction across the eight primary tissue-by-model
-tests.
+Classification treats the animal as the experimental unit and is evaluated by
+leave-one-animal-out cross-validation: within each fold, preprocessing
+(detection filter, log2 transform, Pareto scaling) is fitted on the training
+animals and the held-out animal's spectrum scores are averaged to one score per
+animal. Significance is assessed by animal-label permutation testing with
+Benjamini–Hochberg correction across the eight primary tissue-by-model tests.
 
 ### Key results
 
