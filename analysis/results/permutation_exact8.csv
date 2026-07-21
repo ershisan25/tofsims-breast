@@ -1,0 +1,9 @@
+Tissue,Model,AUC,perm_p,method,perm_p_BH
+Breast tissue,PLS-DA,0.997,0.0002,MC(B=5000),0.0016
+Breast tissue,RandomForest,0.997,0.001,MC(B=1000),0.004
+Fur,PLS-DA,0.66,0.4153,MC(B=5000),0.8306
+Fur,RandomForest,0.74,0.2398,MC(B=1000),0.6395
+Liver,PLS-DA,0.542,0.8,exact,0.8905
+Liver,RandomForest,0.417,0.8905,exact,0.8905
+Blood serum,PLS-DA,0.406,0.7899,exact,0.8905
+Blood serum,RandomForest,0.312,0.6465,exact,0.8905

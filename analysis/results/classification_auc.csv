@@ -1,0 +1,9 @@
+Tissue,Model,n_animals,n_cancer_an,n_ctrl_an,n_spots,AUC_mouse,CI_lo,CI_hi,AUC_spot_naive
+Breast tissue,PLS-DA,38,19,19,192,0.9972,0.9834,1.0,0.9857
+Breast tissue,RandomForest,38,19,19,192,0.9972,0.9834,1.0,0.9857
+Fur,PLS-DA,20,10,10,61,0.66,0.39,0.91,0.5726
+Fur,RandomForest,20,10,10,61,0.74,0.48,1.0,0.664
+Blood serum,PLS-DA,12,8,4,48,0.4062,0.0938,0.75,0.4102
+Blood serum,RandomForest,12,8,4,48,0.3125,0.0,0.6562,0.3955
+Liver,PLS-DA,10,6,4,40,0.5417,0.125,1.0,0.6016
+Liver,RandomForest,10,6,4,40,0.4167,0.0417,0.7917,0.4336

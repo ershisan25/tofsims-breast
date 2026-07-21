@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+/peak_analysis/all4_50-250/*.txt
+/peak_analysis/all4_50-250/*.csv

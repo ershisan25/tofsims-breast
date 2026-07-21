@@ -1,0 +1,7 @@
+Model,Tissue,transfer_AUC,perm_p,perm_p_BH
+PLS-DA,Fur,0.46,0.7731,0.912
+PLS-DA,Liver,0.417,0.7236,0.912
+PLS-DA,Blood serum,0.469,0.912,0.912
+RandomForest,Fur,0.185,0.0145,0.087
+RandomForest,Liver,0.625,0.6167,0.912
+RandomForest,Blood serum,0.562,0.8156,0.912
