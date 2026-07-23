@@ -1,5 +1,5 @@
 {
-  "title": "Machine Learning Reveals a Mammary Tumor-Associated Multi-Ion Signature and Its Detectability Across Biological Samples — analysis code",
+  "title": "Integrating ToF-SIMS and machine learning reveals a mammary tumor-associated multi-ion signature — analysis code",
   "description": "Analysis code, result tables, and figures for a time-of-flight secondary ion mass spectrometry (ToF-SIMS) machine-learning study of a mammary tumor-associated multi-ion signature and its detectability across biological samples in the MMTV-PyMT mouse model of breast cancer. Accompanies the article by Manaprasertsak et al.",
   "upload_type": "software",
   "license": "MIT",
@@ -18,10 +18,10 @@
       "name": "Azemovic, Laila"
     },
     {
-      "name": "Hagerling, Catharina"
+      "name": "Mohlin, Sofie"
     },
     {
-      "name": "Mohlin, Sofie"
+      "name": "Hagerling, Catharina"
     },
     {
       "name": "Pienta, Kenneth J."

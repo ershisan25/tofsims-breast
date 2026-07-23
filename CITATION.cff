@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the associated article."
-title: "Machine Learning Reveals a Mammary Tumor-Associated Multi-Ion Signature and Its Detectability Across Biological Samples"
+title: "Integrating ToF-SIMS and machine learning reveals a mammary tumor-associated multi-ion signature"
 authors:
   - {family-names: Manaprasertsak, given-names: Auraya}
   - {family-names: Tang, given-names: Wei}
   - {family-names: Lööf, given-names: Caroline}
   - {family-names: Azemovic, given-names: Laila}
-  - {family-names: Hagerling, given-names: Catharina}
   - {family-names: Mohlin, given-names: Sofie}
+  - {family-names: Hagerling, given-names: Catharina}
   - {family-names: Pienta, given-names: Kenneth J.}
   - {family-names: Kazi, given-names: Julhash U.}
   - {family-names: Malmberg, given-names: Per}

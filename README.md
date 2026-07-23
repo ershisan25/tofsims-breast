@@ -1,8 +1,8 @@
 # tofsims-breast
 
-Analysis code, result tables, and figures for the study *Machine Learning
-Reveals a Mammary Tumor-Associated Multi-Ion Signature and Its Detectability
-Across Biological Samples* (Manaprasertsak et al., manuscript in preparation).
+Analysis code for the study *Integrating ToF-SIMS and machine learning reveals a
+mammary tumor-associated multi-ion signature* (Manaprasertsak et al., manuscript
+in preparation).
 
 ## Overview
 
@@ -18,26 +18,6 @@ leave-one-animal-out cross-validation: within each fold, preprocessing
 animals and the held-out animal's spectrum scores are averaged to one score per
 animal. Significance is assessed by animal-label permutation testing with
 Benjamini–Hochberg correction across the eight primary tissue-by-model tests.
-
-### Key results
-
-| Tissue | LOAO AUC (PLS-DA / RF) | Permutation *P* (BH) |
-|---|---|---|
-| Mammary | 0.997 / 0.997 | 0.002 / 0.004 |
-| Fur | 0.66 / 0.74 | 0.83 / 0.64 |
-| Liver | 0.54 / 0.42 | 0.89 |
-| Serum | 0.41 / 0.31 | 0.89 |
-
-- A **robust mammary tumor signature** distinguishes tumor-bearing from control
-  mice — PLS-DA and Random Forest both reach AUC 0.997 under LOAO, significant by
-  animal-label permutation.
-- Extending to **peripheral samples** did not reproduce the mammary
-  discrimination. Among them, **fur** showed the highest classification
-  performance and the greatest overlap in discriminative ions with mammary
-  gland, whereas **liver and serum** showed little evidence of discrimination.
-- Tumor-associated multi-ion signatures therefore classify mammary tissue
-  robustly but are not equally retained across biological samples, with fur
-  showing partial retention of the mammary signature.
 
 ## Repository structure
 
@@ -63,10 +43,11 @@ analysis/
   ToFSIMS_analysis.ipynb       documented, end-to-end analysis notebook
   ToFSIMS_main_figures.ipynb   reproducible notebook for the main figures
   original_notebooks/          upstream preprocessing + per-tissue analysis notebooks
-  results/                     result tables (CSV) + canonical_manifest.json
-  figures/                     main and supplementary figures (PNG)
 peak_analysis/all4_50-250/     input-data location (see Data availability)
 ```
+
+Running the pipeline writes the result tables and figures into `analysis/results/`
+and `analysis/figures/`; these outputs are not shipped in the repository.
 
 ## Requirements
 
@@ -81,16 +62,15 @@ SciencePlots.
 
 ## Reproducing the analysis
 
-1. Obtain the processed peak tables and place them in
-   `peak_analysis/all4_50-250/` (see that directory's README for the expected
-   file layout).
+1. Obtain the processed peak tables (see **Data availability**) and place them in
+   `peak_analysis/all4_50-250/`.
 2. Run the pipeline from the `analysis/` directory:
 
    ```bash
    cd analysis
-   python 01_classification.py       # LOAO AUC + bootstrap CI    -> results/classification_auc.csv
-   python 10_permutation_exact.py    # 8 tissue×model permutation -> results/permutation_exact8.csv
-   python 09_canonical.py            # canonical ions + transfer  -> results/preservation_transfer.csv
+   python 01_classification.py       # LOAO AUC + bootstrap CI
+   python 10_permutation_exact.py    # 8 tissue×model permutation
+   python 09_canonical.py            # canonical ions + direct transfer
    python 04_stability.py            # spot-level stability
    python 08_stability_animal.py     # animal-level stability
    python 06_sensitivity.py          # sensitivity grid
@@ -102,12 +82,12 @@ SciencePlots.
    documented, cell-by-cell run.
 
 Random seeds are fixed (`random_state = 42`; 500-tree random forests), so the
-canonical AUCs and permutation *p* values are reproducible.
+results are reproducible.
 
 ## Data availability
 
-The processed peak tables (< 250 *m/z*) are not distributed in this repository.
-They are available from the authors on reasonable request. See
+The processed peak tables (< 250 *m/z*) are archived separately on Zenodo; the
+DOI is provided in the article's data-availability statement. See
 `peak_analysis/all4_50-250/README.md` for the expected file layout.
 
 ## Citation
@@ -115,11 +95,11 @@ They are available from the authors on reasonable request. See
 ```bibtex
 @unpublished{manaprasertsak2026mammary,
   author = {Manaprasertsak, Auraya and Tang, Wei and L{\"o}{\"o}f, Caroline and
-            Azemovic, Laila and Hagerling, Catharina and Mohlin, Sofie and
+            Azemovic, Laila and Mohlin, Sofie and Hagerling, Catharina and
             Pienta, Kenneth J. and Kazi, Julhash U. and Malmberg, Per and
             Hammarlund, Emma U.},
-  title  = {Machine Learning Reveals a Mammary Tumor-Associated Multi-Ion
-            Signature and Its Detectability Across Biological Samples},
+  title  = {Integrating ToF-SIMS and machine learning reveals a mammary
+            tumor-associated multi-ion signature},
   note   = {Manuscript in preparation},
   year   = {2026}
 }

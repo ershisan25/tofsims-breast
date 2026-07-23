@@ -1,7 +1,0 @@
-Model,Tissue,transfer_AUC,perm_p,perm_p_BH,Sample type,positive_direction,BH_significant
-PLS-DA,Fur,0.46,0.7731,0.912,Fur,False,False
-PLS-DA,Liver,0.417,0.7236,0.912,Liver,False,False
-PLS-DA,Blood serum,0.469,0.912,0.912,Serum,False,False
-RandomForest,Fur,0.185,0.0145,0.087,Fur,False,False
-RandomForest,Liver,0.625,0.6167,0.912,Liver,True,False
-RandomForest,Blood serum,0.562,0.8156,0.912,Serum,True,False

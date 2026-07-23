@@ -1,9 +1,0 @@
-Sample type,Tissue,Model,n_animals,n_cancer_an,n_ctrl_an,n_spots,AUC,CI_lo,CI_hi,perm_p,perm_p_BH,method
-Mammary tissue,Breast tissue,PLS-DA,38,19,19,192,0.997,0.9834,1.0,0.0002,0.0016,MC(B=5000)
-Mammary tissue,Breast tissue,RandomForest,38,19,19,192,0.997,0.9834,1.0,0.001,0.004,MC(B=1000)
-Fur,Fur,PLS-DA,20,10,10,61,0.66,0.39,0.91,0.4153,0.8306,MC(B=5000)
-Fur,Fur,RandomForest,20,10,10,61,0.74,0.48,1.0,0.2398,0.6395,MC(B=1000)
-Liver,Liver,PLS-DA,10,6,4,40,0.542,0.125,1.0,0.8,0.8905,exact
-Liver,Liver,RandomForest,10,6,4,40,0.417,0.0417,0.7917,0.8905,0.8905,exact
-Serum,Blood serum,PLS-DA,12,8,4,48,0.406,0.0938,0.75,0.7899,0.8905,exact
-Serum,Blood serum,RandomForest,12,8,4,48,0.312,0.0,0.6562,0.6465,0.8905,exact
