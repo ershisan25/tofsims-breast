@@ -86,9 +86,9 @@ results are reproducible.
 
 ## Data availability
 
-The processed peak tables (< 250 *m/z*) are archived separately on Zenodo; the
-DOI is provided in the article's data-availability statement. See
-`peak_analysis/all4_50-250/README.md` for the expected file layout.
+The processed peak tables (< 250 *m/z*) are archived separately on Zenodo:
+https://doi.org/10.5281/zenodo.21510506. See `peak_analysis/all4_50-250/README.md`
+for the expected file layout.
 
 ## Citation
 
